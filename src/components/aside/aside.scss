@@ -1,0 +1,16 @@
+.nav-link {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  gap: 7px;
+  font-size: 20px;
+  white-space: nowrap;
+  color: rgba(99, 115, 129, 1);
+  /* font-size: 14px; */
+  padding: 11px 24px 11px 12px;
+  &.active {
+    color: rgb(0, 167, 111);
+    border-radius: 8px;
+    background: rgba(0, 167, 111, 0.08);
+  }
+}
