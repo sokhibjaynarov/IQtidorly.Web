@@ -5,6 +5,7 @@ const ROOTS = {
   STUDENTS: '/students',
   AUTH: '/auth',
   TEACHERS: '/teachers',
+  ADMIN: '/admin',
   DESCRIPTION: '/description',
 };
 
@@ -43,6 +44,24 @@ export const paths = {
   home: {
     landing: ROOTS.HOME,
   },
+
+//ADMIN
+  admin: {
+    root: ROOTS.HOME,
+    one: `${ROOTS.ADMIN}/one`,
+    // two: `${ROOTS.ADMIN}/test`,
+    // question: `${ROOTS.ADMIN}/test/create`,
+    // edit: (id: string) => `${ROOTS.ADMIN}/test/${id}`,
+    // three: `${ROOTS.ADMIN}/three`,
+    five: `${ROOTS.ADMIN}/five`,
+    books: `${ROOTS.ADMIN}/books`,
+    booksCreate: `${ROOTS.ADMIN}/books/create`,
+    editsBook: (id: string) => `${ROOTS.ADMIN}/books/${id}`,
+    author: `${ROOTS.ADMIN}/author`,
+    authorCreate: `${ROOTS.ADMIN}/author/create`,
+    edits: (id: string) => `${ROOTS.ADMIN}/author/${id}`,
+  },
+
   // Students Page
   students: {
     root: ROOTS.STUDENTS,

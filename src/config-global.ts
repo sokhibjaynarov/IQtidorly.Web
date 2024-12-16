@@ -18,6 +18,11 @@ export type ConfigValue = {
     skip: boolean;
     redirectPath: string;
   };
+  authAdmin: {
+    method: 'jwt';
+    skip: boolean;
+    redirectPath: string;
+  };
   authStudent: {
     method: 'jwt';
     skip: boolean;
@@ -51,6 +56,11 @@ export const CONFIG: ConfigValue = {
     method: 'jwt',
     skip: false,
     redirectPath: paths.students.root,
+  },
+  authAdmin: {
+    method: 'jwt',
+    skip: false,
+    redirectPath: paths.admin.one,
   },
   /**
    * Mapbox
